@@ -25,14 +25,14 @@ reg [31:0] data2fifo;
 reg push;
 reg pop_p;
 
-ila_0 u_ila_0(
-	.clk(clk), 
-	.probe0(pop_p), 
-	.probe1(pop), 
-	.probe2(fifo_out),
-    .probe3(full), 
-	.probe4(empty)
-);
+// ila_0 u_ila_0(
+// 	.clk(clk), 
+// 	.probe0(pop_p), 
+// 	.probe1(pop), 
+// 	.probe2(fifo_out),
+//     .probe3(full), 
+// 	.probe4(empty)
+// );
 
 uart_byte_rx u_uart_byte_rx(
     .clk(clk),
